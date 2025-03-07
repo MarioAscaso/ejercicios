@@ -17,12 +17,13 @@ public class DigitsNumber {
             number /= 10;
             contador++;
         }
+
+        // 🤔 ¿?
         if (contador == 0) {
             contador = 1;
         }
 
         System.out.println("EL NÚMERO TIENE " + contador + " DÍGITOS.");
-
     }
 
 }

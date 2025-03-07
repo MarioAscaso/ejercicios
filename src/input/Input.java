@@ -1,3 +1,10 @@
+/**
+ * Un orden a tener en cuenta en las clases: 😉
+ * Propiedades públicas (constantes)
+ * Propiedades privadas
+ * Métodos públicos
+ * Métodos privados
+ */
 package input;
 
 import java.util.Scanner;
@@ -10,7 +17,9 @@ public class Input {
     static String stringValue;
     static long longValue;
 
+    // ✅ Muy bien: privado porque nadie del mundo exterior tiene que usarlo.
     private static void getInt(){intValue = Integer.parseInt(sc.nextLine());}
+
     public static int getIntValue(){
         getInt();
         return intValue;

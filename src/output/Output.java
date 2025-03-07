@@ -22,7 +22,7 @@ public class Output {
                 ¿QUE OPCIÓN QUIERES HACER? ->\s""");
     }
 
-    public static void askHeigh(){System.out.print("Introduce el largo del rectángulo: ");}
+    public static void askHeight(){System.out.print("Introduce el largo del rectángulo: ");}
     public static void askWidth(){System.out.print("Introduce el ancho del rectángulo: ");}
 
     public static void askCelsius(){System.out.print("Introduce los grados en Celsius: ");}

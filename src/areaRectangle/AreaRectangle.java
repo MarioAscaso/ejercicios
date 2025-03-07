@@ -1,23 +1,24 @@
 package areaRectangle;
 
 import input.Input;
+import maths.Mathematician;
 import output.Output;
 
 public class AreaRectangle {
 
-    static float heigh;
+    static float height;
     static float width;
     static float areaRectangle;
 
-    public static void RectangleAreaCalculation() {
-        Output.askHeigh();
-        heigh = Input.getFloatValue();
+    public static void rectangleAreaCalculation() {
+        Output.askHeight();
+        height = Input.getFloatValue();
         Output.askWidth();
         width = Input.getFloatValue();
 
-        areaRectangle = heigh * width;
+        areaRectangle = Mathematician.multiply(height, width);
 
-        System.out.println("AREA DEL RECTÁNGULO DE ANCHO " + width + " Y ALTO " + heigh + ": " + areaRectangle);
+        System.out.println("AREA DEL RECTÁNGULO DE ANCHO " + width + " Y ALTO " + height + ": " + areaRectangle);
     }
 
 }

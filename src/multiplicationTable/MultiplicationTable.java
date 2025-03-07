@@ -12,6 +12,7 @@ public class MultiplicationTable {
         number = Input.getIntValue();
 
         for (int i = 1; i < 11; i++) {
+            // Haz uso de Output para mostrar esta información
             System.out.printf("%-2d x %-2d = %-3d%n", number, i, (number * i));
         }
 

@@ -14,7 +14,7 @@ public class CelsiusFahrenheitConverter {
 
         fahrenheit = celsius * 9 / 5 + 32;
 
-        System.out.println("ºC: " + celsius + " --> ºF: " + fahrenheit);
+        System.out.println(celsius + " ºC --> " + fahrenheit + " ºF");
     }
 
 }

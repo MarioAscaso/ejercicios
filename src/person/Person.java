@@ -1,5 +1,6 @@
 package person;
 
+// ✅
 public class Person {
 
     String nombre;
@@ -12,6 +13,7 @@ public class Person {
         this.edad = edad;
     }
 
+    // puedes nombrar este método de mil maneras; una de ellas es: public String firstName()...
     public String getFirstName() {
         return nombre;
     }
@@ -26,7 +28,6 @@ public class Person {
 
     @Override
     public String toString() {
-
         return "%-10d" + nombre + "%-10d" + apellido + "&-2d" + edad;
     }
 }

@@ -15,22 +15,24 @@ import validator.Validator;
 
 public class Main {
 
+    private static final int RECTANGLE_AREA_CALCULATION = 1;
+    public static final int EXIT = 20;
     public static void main(String[] args) {
 
-        int optionmenu;
+        int optionMenu;
 
         do {
             Output.showMenu();
-            optionmenu = Input.getIntValue();
-            actionToPerform(optionmenu);
-        } while (!userWantsToExit(optionmenu) || !optionMenuInRange(optionmenu));
+            optionMenu = Input.getIntValue();
+            actionToPerform(optionMenu);
+        } while (!userWantsToExit(optionMenu) || !optionMenuInRange(optionMenu));
         Output.byeBye();
     }
 
     public static void actionToPerform(int optionMenu) {
         switch (optionMenu) {
-            case 1:
-                AreaRectangle.RectangleAreaCalculation();
+            case RECTANGLE_AREA_CALCULATION: // <- mejor así, como vimos en clase.
+                AreaRectangle.rectangleAreaCalculation();
                 break;
             case 2:
                 CelsiusFahrenheitConverter.celsiusFahrenheitConverter();
@@ -60,14 +62,16 @@ public class Main {
             case 10:
                 Hanged.playHanged();
                 break;
-            default:
+            default: // no hace falta. La puedes borrar tranquilamente.
         }
     }
 
+    // ✅ Privado mejor.
     public static boolean userWantsToExit(int optionMenu) {
         return Validator.userWantsToExit(optionMenu);
     }
 
+    // ✅ Ídem.
     public static boolean optionMenuInRange(int optionMenu) {
         return Validator.validateOptionMenu(optionMenu);
     }
